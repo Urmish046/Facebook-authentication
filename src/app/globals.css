@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .signup-input {
+    @apply bg-gray-50 px-4 py-2.5 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-600;
+  }
+  .signup-select {
+    @apply p-2.5 border border-gray-300 rounded focus:outline-none;
+  }
+  .signup-label {
+    @apply block text-sm font-semibold text-gray-900 mb-1;
+  }
+  .gender-radio {
+    @apply flex items-center justify-between border border-gray-300 rounded p-2.5 bg-white text-base text-gray-900;
+  }
+}
